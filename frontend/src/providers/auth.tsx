@@ -11,6 +11,7 @@ import {
 import { jwtDecode } from "jwt-decode";
 import { useRouter } from "next/router";
 import Swal from "sweetalert2";
+import { baseUrls } from "@/utils/base-urls";
 
 type AuthContextType = {
   user: any;
@@ -54,7 +55,7 @@ export const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const router = useRouter();
 
   const loginUser = async (email: string, password: string) => {
-    const response = await fetch("http://127.0.0.1:8000/auth/token/", {
+    const response = await fetch(`${baseUrls.auth}/token/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -98,7 +99,7 @@ export const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
     password: string,
     password2: string
   ) => {
-    const response = await fetch("http://127.0.0.1:8000/auth/register/", {
+    const response = await fetch(`${baseUrls.auth}/register/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
