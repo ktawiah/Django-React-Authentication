@@ -3,6 +3,7 @@ from django.contrib.auth.models import AbstractUser, UnicodeUsernameValidator
 from uuid import uuid4
 from django.utils.translation import gettext as _
 from django.db.models.signals import post_save
+from django.utils import timezone
 
 
 class User(AbstractUser):
@@ -20,6 +21,7 @@ class User(AbstractUser):
         db_index=True,
     )
     email = models.EmailField(_("email address"), unique=True, db_index=True)
+    last_login = models.DateTimeField(_("last login"), default=timezone.now)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
