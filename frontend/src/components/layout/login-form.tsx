@@ -23,9 +23,9 @@ const LoginForm = () => {
       [name]: value,
     }));
   };
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent) => {
     event?.preventDefault();
-    formData.email && loginUser(formData.email, formData.password);
+    formData.email && (await loginUser(formData.email, formData.password));
     console.log(formData);
   };
   return (
