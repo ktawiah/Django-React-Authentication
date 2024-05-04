@@ -9,7 +9,7 @@ import {
   useContext,
 } from "react";
 import { jwtDecode } from "jwt-decode";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 import { baseUrls } from "@/utils/base-urls";
 
