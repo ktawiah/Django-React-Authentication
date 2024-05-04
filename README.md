@@ -23,7 +23,7 @@ Follow the following instruction to setup this project locally on your device
 
 #### 2. Navigate to the backend directory
 ```bash
-cd project-name
+cd backend
 ```
 
 #### 3. Create a virtual environment
