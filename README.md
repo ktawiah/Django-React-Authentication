@@ -1,4 +1,4 @@
-# Django React Authentication Project
+# Django-React Authentication
 
 Welcome to our full stack auth application! This project showcases the implementation of user JSON Web Token authentication using Django Rest Framework for the backend and Next.js for the frontend.
 
@@ -51,7 +51,7 @@ cd backend
   cd frontend
 ```
 
-### 8. Install frontend dependencies
+#### 8. Install frontend dependencies
 ```bash
   npm run dev
   # or
@@ -62,7 +62,7 @@ cd backend
   bun dev
 ```
 
-### 9. Run frontend dev server
+#### 9. Run frontend dev server
 ```bash
   npm run dev
 ```
