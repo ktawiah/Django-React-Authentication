@@ -38,6 +38,7 @@ cd backend
 
 #### 5. Run migrations
 ```bash
+  python manage.py makemigrations
   python manage.py migrate
 ```
 #### 6. Start the backend development server

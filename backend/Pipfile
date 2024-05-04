@@ -8,6 +8,8 @@ django = "*"
 djangorestframework = "*"
 pillow = "*"
 django-jazzmin = "*"
+django-cors-headers = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
